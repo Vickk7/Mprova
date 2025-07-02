@@ -10,15 +10,15 @@ body {
 }
 
 .inscricao-main {
-    background: linear-gradient(135deg, #667eea 0%, #4b51a2 100%);
+    background: #0a2550;
     min-height: 100vh;
     padding: 20px;
-    padding-top: 100px; /* Espaço para o header fixo */
-    padding-bottom: 40px; /* Espaço para o footer */
+    padding-top: 80px; /* Espaço para o header fixo */
+    padding-bottom: 80px; /* Espaço para o footer */
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
@@ -40,22 +40,11 @@ body {
 }
 
 .header {
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    background: #223e6a;
     padding: 40px 30px;
     text-align: center;
     position: relative;
     overflow: hidden;
-}
-
-.header::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-    animation: rotate 20s linear infinite;
 }
 
 @keyframes rotate {
@@ -84,7 +73,7 @@ body {
 }
 
 .info-box {
-    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    background: #e0f2fe 100%;
     border-left: 4px solid #0ea5e9;
     padding: 20px;
     margin-bottom: 30px;
@@ -133,7 +122,7 @@ body {
 }
 
 .required {
-    color: #ef4444;
+    color: #0c4a6e;
 }
 
 .form-control {
@@ -199,7 +188,7 @@ select.form-control {
 .checkbox-item input[type="checkbox"] {
     width: 18px;
     height: 18px;
-    accent-color: #4f46e5;
+    accent-color: #0c4a6e;
     margin-top: 2px;
 }
 
@@ -212,14 +201,14 @@ select.form-control {
 }
 
 .submit-section {
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-    padding: 30px;
-    margin: 30px -30px -40px -30px;
+    background: #f1f5f9 100%;
+    padding: 15px;
+    margin: 10px -30px -40px -30px;
     text-align: center;
 }
 
 .submit-btn {
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    background: #0c4a6e;;
     color: white;
     padding: 16px 40px;
     border: none;
@@ -262,20 +251,20 @@ select.form-control {
 }
 
 .contact-info {
-    margin-top: 20px;
-    padding: 20px;
-    background: rgba(79, 70, 229, 0.05);
+    margin-top: 50px;
+    padding: 15px;
+    background: rgba(78, 70, 229, 0.079);
     border-radius: 12px;
     text-align: left;
 }
 
 .contact-info h4 {
-    color: #4f46e5;
+    color: #0c4a6e;
     margin-bottom: 10px;
 }
 
 .contact-info p {
-    color: #6b7280;
+    color: #40495d;
     margin-bottom: 5px;
 }
 

@@ -68,88 +68,113 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="escola">Escola/Instituição <span class="required">*</span></label>
+                    <label for="escola">Nome da escola em que você estuda <span class="required">*</span></label>
                     <input type="text" id="escola" name="escola" class="form-control" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="serie">Série/Ano <span class="required">*</span></label>
+                    <label for="tipoescola">Em qual das categorias abaixo sua escola se encaixa? <span class="required">*</span></label>
+                    <select id="tipoescola" name="tipoescola" class="form-control" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="municipal">Municipal</option>
+                        <option value="estadual">Estadual</option>
+                        <option value="federal">Federal</option>
+                        <option value="privada">Privada</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="serie">Qual série/ano você está cursando? <span class="required">*</span></label>
                     <select id="serie" name="serie" class="form-control" required>
                         <option value="">Selecione sua série</option>
+                        <option value="6ano">6º Ano</option>
+                        <option value="7ano">7º Ano</option>
+                        <option value="8ano">8º Ano</option>
                         <option value="9ano">9º Ano</option>
                         <option value="1medio">1º Ano - Ensino Médio</option>
                         <option value="2medio">2º Ano - Ensino Médio</option>
                         <option value="3medio">3º Ano - Ensino Médio</option>
-                        <option value="superior">Ensino Superior</option>
-                        <option value="outro">Outro</option>
+                        <option value="4medio">4º Ano - Ensino Médio</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="idade">Idade</label>
-                    <input type="number" id="idade" name="idade" class="form-control" min="12" max="25">
+                    <label for="idade">Qual sua idade? <span class="required">*</span></label>
+                    <input type="number" id="idade" name="idade" class="form-control" min="10" max="25">
                 </div>
 
                 <div class="form-group">
-                    <label for="experiencia">Experiência com Olimpíadas</label>
-                    <select id="experiencia" name="experiencia" class="form-control">
-                        <option value="">Selecione</option>
-                        <option value="nunca">Nunca participei</option>
-                        <option value="pouca">Pouca experiência</option>
-                        <option value="media">Experiência média</option>
-                        <option value="muita">Muita experiência</option>
-                    </select>
+                    <label for="experiencia">Já participou de alguma olimpíada? Se sim, indique quais <span class="required">*</span></label>
+                    <input type="text" id="experiencia" name="experiencia" class="form-control" required>
                 </div>
 
                 <div class="form-group">
-                    <label>Olimpíadas de Interesse <span class="required">*</span></label>
+                    <label for="premiacao">Já foi premiado(a) em alguma olimpíada? Se sim, indique quais <span class="required">*</span></label>
+                    <input type="text" id="premiacao" name="premiacao" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Selecione as olimpíadas que deseja participar: <span class="required">*</span></label>
                     <div class="checkbox-group">
-                        <h4>Selecione as olimpíadas que deseja participar:</h4>
                         <div class="checkbox-grid">
                             <div class="checkbox-item">
-                                <input type="checkbox" id="obi" name="olimpiadas[]" value="obi">
-                                <label for="obi">OBI - Olimpíada Brasileira de Informática</label>
+                                <input type="checkbox" id="obf" name="olimpiadas[]" value="obf">
+                                <label for="obf">Olimpíada Brasileira de Física (OBF)</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="obmep" name="olimpiadas[]" value="obmep">
-                                <label for="obmep">OBMEP - Olimpíada Brasileira de Matemática</label>
+                                <input type="checkbox" id="obfep" name="olimpiadas[]" value="obfep">
+                                <label for="obfep">Olimpíada Brasileira de Física na Escola Pública (OBFEP)</label>
                             </div>
                             <div class="checkbox-item">
                                 <input type="checkbox" id="oba" name="olimpiadas[]" value="oba">
-                                <label for="oba">OBA - Olimpíada Brasileira de Astronomia</label>
+                                <label for="oba">Olimpíada Brasileira de Astronomia e Astronáutica (OBA)</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="obf" name="olimpiadas[]" value="obf">
-                                <label for="obf">OBF - Olimpíada Brasileira de Física</label>
+                                <input type="checkbox" id="onad" name="olimpiadas[]" value="onad">
+                                <label for="onad">Olimpíada Nacional de Astronomia Digital (ONAD)</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="obq" name="olimpiadas[]" value="obq">
-                                <label for="obq">OBQ - Olimpíada Brasileira de Química</label>
+                                <input type="checkbox" id="onc" name="olimpiadas[]" value="onc">
+                                <label for="onc">Olimpíada Nacional de Ciências (ONC)</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="obo" name="olimpiadas[]" value="obo">
-                                <label for="obo">OBO - Olimpíada Brasileira de Biologia</label>
+                                <input type="checkbox" id="obmep" name="olimpiadas[]" value="obmep">
+                                <label for="obmep">Olimpíada Brasileira de Matemática das Escolas Públicas (OBMEP)</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="onhb" name="olimpiadas[]" value="onhb">
-                                <label for="onhb">ONHB - Olimpíada Nacional de História do Brasil</label>
+                                <input type="checkbox" id="obg" name="olimpiadas[]" value="obg">
+                                <label for="obg">Olimpíada Brasileira de Geografia (OBG)</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="opl" name="olimpiadas[]" value="opl">
-                                <label for="opl">OPL - Olimpíada de Português/Linguística</label>
+                                <input type="checkbox" id="ol" name="olimpiadas[]" value="ol">
+                                <label for="ol">Olimpíada de Literatura (OL)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="obi" name="olimpiadas[]" value="obi">
+                                <label for="obi">Olimpíada Brasileira de Informática (OBI)</label>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="objetivos">Objetivos e Expectativas</label>
-                    <textarea id="objetivos" name="objetivos" class="form-control" rows="4" placeholder="Conte-nos sobre seus objetivos com as olimpíadas e o que espera do projeto MPROVA..."></textarea>
+                    <label for="extras">Além das olimpíadas citadas acima, você tem interesse em mais alguma? </span></label>
+                    <input type="text" id="extras" name="extras" class="form-control" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="disponibilidade">Disponibilidade de Horários</label>
-                    <textarea id="disponibilidade" name="disponibilidade" class="form-control" rows="3" placeholder="Informe seus horários livres para as monitorias (dias da semana e períodos)..."></textarea>
+                    <label for="enem">Além das olimpíadas, oferecemos preparatório para o ENEM com aulas de matemática e física. Você teria interesse em participar? <span class="required">*</span></label>
+                    <select id="enem" name="enem" class="form-control" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="municipal">Sim</option>
+                        <option value="estadual">Não</option>
+                        <option value="federal">Talvez</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="objetivos">Conte-nos sobre seus objetivos com as olimpíadas e o que espera do projeto MPROVA</label>
+                    <textarea id="objetivos" name="objetivos" class="form-control" rows="6"></textarea>
                 </div>
 
                 <div class="submit-section">
@@ -160,7 +185,7 @@
                     <div class="contact-info">
                         <h4><i class="fas fa-envelope"></i> Dúvidas?</h4>
                         <p><strong>E-mail:</strong> projetomprova@gmail.com</p>
-                        <p><strong>Olimpíadas específicas:</strong> Entre em contato com o monitor responsável</p>
+                        <p><strong>Instagram:</strong> m.prova_</p>
                     </div>
                 </div>
             </form>
