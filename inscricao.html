@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto MPROVA</title>
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/inscricao.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/logo_foguete.png" type="png">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-area">
+      <span class="logo-svg">
+        <img class="logo-img" src="./img/logo_foguete.png" alt="">
+      </span>
+      <span class="logo-text">
+        <strong>PROJETO<br>M<span class="logo-m-blue">PROVA</span></strong>
+      </span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./metodologia.html">Metodologia</a></li>
+        <li><a href="./olimpiadas.html">Olimpíadas</a></li>
+        <li><a href="./equipe.html">Equipe</a></li>
+       <li><a href="./inscricao.html" class="contorno">Inscreva-se</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="inscricao-main">
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-graduation-cap"></i> MPROVA</h1>
+            <p>Formulário de Inscrição - Preparação para Olimpíadas Acadêmicas</p>
+        </div>
+
+        <div class="form-content">
+            <div class="info-box">
+                <h3><i class="fas fa-info-circle"></i> Informações Importantes</h3>
+                <ul>
+                    <li>Para facilitar a comunicação, criamos uma comunidade no WhatsApp</li>
+                    <li>Entre apenas nos grupos das olimpíadas que tem interesse</li>
+                    <li>Todas as aulas serão realizadas pelo Google Meet</li>
+                    <li>Os links serão disponibilizados alguns minutos antes das monitorias</li>
+                    <li>Materiais: videoaulas, apostilas, listas de exercícios e mais</li>
+                    <li>Sua dedicação é fundamental para garantir bons resultados!</li>
+                </ul>
+            </div>
+
+            <form id="inscricaoForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo <span class="required">*</span></label>
+                    <input type="text" id="nome" name="nome" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone/WhatsApp <span class="required">*</span></label>
+                    <input type="tel" id="telefone" name="telefone" class="form-control" required placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="form-group">
+                    <label for="escola">Escola/Instituição <span class="required">*</span></label>
+                    <input type="text" id="escola" name="escola" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="serie">Série/Ano <span class="required">*</span></label>
+                    <select id="serie" name="serie" class="form-control" required>
+                        <option value="">Selecione sua série</option>
+                        <option value="9ano">9º Ano</option>
+                        <option value="1medio">1º Ano - Ensino Médio</option>
+                        <option value="2medio">2º Ano - Ensino Médio</option>
+                        <option value="3medio">3º Ano - Ensino Médio</option>
+                        <option value="superior">Ensino Superior</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade" name="idade" class="form-control" min="12" max="25">
+                </div>
+
+                <div class="form-group">
+                    <label for="experiencia">Experiência com Olimpíadas</label>
+                    <select id="experiencia" name="experiencia" class="form-control">
+                        <option value="">Selecione</option>
+                        <option value="nunca">Nunca participei</option>
+                        <option value="pouca">Pouca experiência</option>
+                        <option value="media">Experiência média</option>
+                        <option value="muita">Muita experiência</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Olimpíadas de Interesse <span class="required">*</span></label>
+                    <div class="checkbox-group">
+                        <h4>Selecione as olimpíadas que deseja participar:</h4>
+                        <div class="checkbox-grid">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="obi" name="olimpiadas[]" value="obi">
+                                <label for="obi">OBI - Olimpíada Brasileira de Informática</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="obmep" name="olimpiadas[]" value="obmep">
+                                <label for="obmep">OBMEP - Olimpíada Brasileira de Matemática</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="oba" name="olimpiadas[]" value="oba">
+                                <label for="oba">OBA - Olimpíada Brasileira de Astronomia</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="obf" name="olimpiadas[]" value="obf">
+                                <label for="obf">OBF - Olimpíada Brasileira de Física</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="obq" name="olimpiadas[]" value="obq">
+                                <label for="obq">OBQ - Olimpíada Brasileira de Química</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="obo" name="olimpiadas[]" value="obo">
+                                <label for="obo">OBO - Olimpíada Brasileira de Biologia</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="onhb" name="olimpiadas[]" value="onhb">
+                                <label for="onhb">ONHB - Olimpíada Nacional de História do Brasil</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="opl" name="olimpiadas[]" value="opl">
+                                <label for="opl">OPL - Olimpíada de Português/Linguística</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="objetivos">Objetivos e Expectativas</label>
+                    <textarea id="objetivos" name="objetivos" class="form-control" rows="4" placeholder="Conte-nos sobre seus objetivos com as olimpíadas e o que espera do projeto MPROVA..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="disponibilidade">Disponibilidade de Horários</label>
+                    <textarea id="disponibilidade" name="disponibilidade" class="form-control" rows="3" placeholder="Informe seus horários livres para as monitorias (dias da semana e períodos)..."></textarea>
+                </div>
+
+                <div class="submit-section">
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Enviar Inscrição
+                    </button>
+                    
+                    <div class="contact-info">
+                        <h4><i class="fas fa-envelope"></i> Dúvidas?</h4>
+                        <p><strong>E-mail:</strong> projetomprova@gmail.com</p>
+                        <p><strong>Olimpíadas específicas:</strong> Entre em contato com o monitor responsável</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+  </main>
+
+  <script src="./js/inscricao.js"></script>
+  
+  <footer>
+    <div class="footer-logo-area">
+      <img class="footer-logo-img" src="./img/logo_foguete.png" alt="Logo Projeto MPROVA">
+      <span class="footer-logo-text">
+        PROJETO<br>M<span class="footer-logo-m-blue">PROVA</span>
+      </span>
+    </div>
+    <div class="footer-contact">
+      <p>Entre em contato conosco!</p>
+      <p><a href="mailto:projetomprova@gmail.com" class="email-link">projetomprova@gmail.com</a></p>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/m.prova_?igsh=bmw5am4zNDdma2xp" target="_blank"><img src="./img/logo_instagram.svg" alt="Instagram"></a>
+    </div>
+  </footer>
+</body>
+</html>

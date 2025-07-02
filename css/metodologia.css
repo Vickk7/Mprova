@@ -1,0 +1,99 @@
+/* Estilos para a página de metodologia */
+.pilares-container {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pilar-card {
+  background: #223e6a;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0rem;
+  flex: 1;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.pilar-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.pilar-card h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: white;
+  display: block;
+}
+
+.pilar-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  color: #e0e0e0;
+}
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .clipboard-icon {
+    width: 150px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pilar-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+}
+
+.metodology-layout {
+  display: flex;
+  align-items: center;        /* alinha verticalmente */
+  justify-content: space-between;
+  gap: 10px;                  /* espaço entre texto e imagem */
+  flex-wrap: wrap;            /* permite quebrar em telas menores */
+  margin-top: 20px;
+  margin: 20px auto;            /* centraliza horizontalmente */
+  padding: 12px 8px;
+}
+
+.metodology-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.metodology-image img {
+  width: 300px;              /* ou ajuste como preferir */
+  height: auto;
+  display: block;
+}
+
+.meto-header {
+  text-align: justify;
+  max-width: 1450px;
+  margin-bottom: 3rem;
+}
+
+.meto-header h1 {
+    font-size: 75px;
+    word-break: break-word;
+  }
+
+.meto-header p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 670px;
+}
